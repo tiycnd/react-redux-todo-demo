@@ -1,0 +1,35 @@
+.App {
+  margin: 0 auto;
+  padding: 2em 1em;
+  max-width: 50em;
+}
+
+.Todo {
+  margin: 0.2rem 0;
+}
+
+.Todo input[type="checkbox"] {
+  margin: 3px 6px 3px 3px;
+  position: relative;
+  top: -2px;
+}
+
+.todo-done {
+  text-decoration: line-through black;
+}
+
+.TodoList {
+  margin-top: 0.5rem;
+  border-top: 1px solid #CCC;
+  padding-top: 0.5rem;
+}
+
+.FilterTodos input[type="radio"] {
+  margin: 3px 6px 3px 3px;
+  position: relative;
+  top: -2px;
+}
+
+.CreateTodo {
+  margin-bottom: 0.5rem;
+}
