@@ -12,20 +12,20 @@ const reducer = function(state = initialState, action) {
         case CREATE_TODO:
             return update(state, {
                 todos: {
-                    $push: [{
-                        text: action.payload,
-                        id: state.nextId,
-                        done: false
-                    }]
+                    $push: [
+                        {
+                            text: action.payload,
+                            id: state.nextId,
+                            done: false
+                        }
+                    ]
                 },
                 nextId: {
                     $apply: (id) => id + 1
                 }
             })
         case TOGGLE_TODO:
-            const idx = state.todos.findIndex(function(todo) {
-                return todo.id === action.payload
-            });
+            const idx = state.todos.findIndex((todo) => todo.id === action.payload);
             return update(state, {
                 todos: {
                     [idx]: {

@@ -1,7 +1,23 @@
+import React, {Component} from 'react';
 import {connect} from 'react-redux'
 
-import TodoList from "../components/TodoList";
 import {toggleTodo} from "../actions";
+import Todo from "../components/Todo";
+
+class TodoList extends Component {
+    handleToggle = (id) => {
+        this.props.toggleTodo(id);
+    }
+
+    render() {
+        const {todos} = this.props;
+        return (
+            <div className="TodoList">
+                {todos.map(todo => (<Todo handleToggle={this.handleToggle} todo={todo}/>))}
+            </div>
+        );
+    }
+}
 
 const mapStateToProps = function(state) {
     let todos;

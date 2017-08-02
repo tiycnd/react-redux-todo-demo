@@ -4,7 +4,7 @@ import './App.css';
 
 import CreateTodo from "./containers/CreateTodo";
 import FilterTodos from "./containers/FilterTodos";
-import FilteredTodoList from "./containers/FilteredTodoList";
+import TodoList from "./containers/TodoList";
 
 class App extends Component {
     render() {
@@ -12,7 +12,7 @@ class App extends Component {
             <div className="App">
                 <CreateTodo/>
                 <FilterTodos/>
-                <FilteredTodoList/>
+                <TodoList/>
             </div>
         );
     }

@@ -8,7 +8,7 @@ import registerServiceWorker from './registerServiceWorker';
 import todoApp from './reducer'
 import App from './App'
 
-let store = createStore(
+const store = createStore(
   todoApp,
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
