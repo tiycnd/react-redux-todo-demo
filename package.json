@@ -9,6 +9,7 @@
     "react-dom": "^15.6.1",
     "react-redux": "^5.0.5",
     "react-scripts": "1.0.10",
+    "react-test-renderer": "^15.6.1",
     "redux": "^3.7.2",
     "shoelace-css": "^1.0.0-beta5"
   },

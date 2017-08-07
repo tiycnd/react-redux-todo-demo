@@ -7,7 +7,7 @@ class Todo extends Component {
         return (
             <div className="Todo">
                 <input type="checkbox" checked={todo.done} onChange={event => handleToggle(todo.id)}/>
-                <span className={todo.done ? "todo-done" : ""} onClick={event => handleToggle(todo.id)}>{todo.text}</span>
+                <span className={todo.done ? "todo-done" : "todo-not-done"} onClick={event => handleToggle(todo.id)}>{todo.text}</span>
             </div>
         )
     }
